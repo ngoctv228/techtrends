@@ -1,0 +1,44 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -d -p  7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# get list docker instances
+docker ps
+# get logs from container instance
+docker logs CONTAINER_ID
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:        werkzeug:2024-10-07 15:28:41,593,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:   werkzeug:2024-10-07 15:28:41,594,  * Running on http://172.17.0.3:3111/ (Press CTRL+C to quit)
+INFO:   werkzeug:2024-10-07 15:28:51,302, 172.17.0.1 - - [07/Oct/2024 15:28:51] "GET / HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:28:51,346, 172.17.0.1 - - [07/Oct/2024 15:28:51] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:28:51,389, 172.17.0.1 - - [07/Oct/2024 15:28:51] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:   werkzeug:2024-10-07 15:35:17,551, 172.17.0.1 - - [07/Oct/2024 15:35:17] "GET / HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:35:17,606, 172.17.0.1 - - [07/Oct/2024 15:35:17] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:35:17,762, 172.17.0.1 - - [07/Oct/2024 15:35:17] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:   werkzeug:2024-10-07 15:35:22,513, 172.17.0.1 - - [07/Oct/2024 15:35:22] "GET /metrics HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:35:30,926, 172.17.0.1 - - [07/Oct/2024 15:35:30] "GET /healthz HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:51:29,670, 172.17.0.1 - - [07/Oct/2024 15:51:29] "GET / HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:51:29,710, 172.17.0.1 - - [07/Oct/2024 15:51:29] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:   werkzeug:2024-10-07 15:53:53,472, 172.17.0.1 - - [07/Oct/2024 15:53:53] "GET /create HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:53:53,511, 172.17.0.1 - - [07/Oct/2024 15:53:53] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:   werkzeug:2024-10-07 15:54:24,679, 172.17.0.1 - - [07/Oct/2024 15:54:24] "GET /metrics HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 15:55:08,698, 172.17.0.1 - - [07/Oct/2024 15:55:08] "GET /healths HTTP/1.1" 404 -
+INFO:   werkzeug:2024-10-07 15:55:12,836, 172.17.0.1 - - [07/Oct/2024 15:55:12] "GET /healthz HTTP/1.1" 200 -
+INFO:   root:2024-10-07 16:07:04,592, About Us page is retrieved
+INFO:   werkzeug:2024-10-07 16:07:04,597, 172.17.0.1 - - [07/Oct/2024 16:07:04] "GET /about HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 16:07:04,643, 172.17.0.1 - - [07/Oct/2024 16:07:04] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:   werkzeug:2024-10-07 16:08:10,979, 172.17.0.1 - - [07/Oct/2024 16:08:10] "GET / HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 16:08:11,018, 172.17.0.1 - - [07/Oct/2024 16:08:11] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:   root:2024-10-07 16:08:12,218, Article "2020 CNCF Annual Report" retrieved!
+INFO:   werkzeug:2024-10-07 16:08:12,222, 172.17.0.1 - - [07/Oct/2024 16:08:12] "GET /1 HTTP/1.1" 200 -
+INFO:   werkzeug:2024-10-07 16:08:12,263, 172.17.0.1 - - [07/Oct/2024 16:08:12] "GET /static/css/main.css HTTP/1.1" 304 -

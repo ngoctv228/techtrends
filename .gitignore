@@ -1,6 +1,6 @@
 .env/
 .venv/
-.vagrant/
+.vagrant
 .myvenv/
 __pycache__/
-.vagrant.d/
+.vagrant.d

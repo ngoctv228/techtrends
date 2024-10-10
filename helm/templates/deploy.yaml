@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: techtrends
-  replicas:  {{ .Values.containers.replicaCount }}
+  replicas:  {{ .Values.replicaCount }}
   strategy:
     rollingUpdate:
       maxSurge: 25%

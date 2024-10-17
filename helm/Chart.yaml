@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends
+description: Install Techtrends application
+keywords:
+  - techtrends
+version: 1.0.0
+maintainers:
+  - name: Ngoc Trinh Van
+    email: trinhvanngoc228@gmail.com
